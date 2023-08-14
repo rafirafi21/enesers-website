@@ -1,0 +1,123 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: #d8feff;
+}
+
+.social {
+    align-items: center;
+    width: 275px;
+}
+
+.footer-logo {
+    width: 300px;
+}
+
+.ftr-logo {
+    width: 200px;
+    height: auto;
+    margin-left: 38px;
+    margin-top: 15px;
+}
+
+.join-us {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.accounts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+/* Social Media Icon Styling */
+
+.fa {
+    padding: 8px;
+    font-size: 10px;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-youtube {
+    background: #179193;
+    color: white;
+}
+
+.fa-facebook {
+    background: #179193;
+    color: white;
+}
+
+.fa-instagram {
+    background: #179193;
+    color: white;
+}
+
+/* Address and Contact CSS */
+
+.address-contact-content-title {
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 24px;
+}
+
+.address-contact-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.address {
+    width: 200px;
+    margin-right: 15px;
+}
+
+.contact {
+    width: 210px;
+}
+
+.address-contact-title {
+    font-weight: bold;
+    margin-top: 39px;
+    margin-bottom: 20px;
+}
+
+@media only  screen and (max-width: 736px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .social {
+        align-items: center;
+        width: 100%;
+    }
+
+    .address-contact-content-title {
+        text-align: center;
+    }
+
+    .address-contact-content {
+        align-items: center;
+        justify-content: center;
+    }
+}

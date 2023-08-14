@@ -1,0 +1,52 @@
+.bgimage {
+    height: 497px;
+    width: 100%;
+    text-align: left;
+    padding-top: 80px;
+    object-fit: cover;
+    object-position: bottom;
+    font-family: arial;
+    font-weight: bold;
+    text-shadow: 0px 1px 5px black;
+    color: white;
+    overflow: hidden;
+    background: #C04848;  /* fallback for old browsers */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.001)), url("enesers.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.001)), url("enesers.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 45px; 
+    margin-top: 145px; 
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.sub-title {
+    font-size: 28px; 
+    margin-top: 20px; 
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.bgimage-button {
+    background-color: #179193;
+    padding: 6px 9px;
+    font-family: arial;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px black;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.bgimage-button:hover {
+    color: #179193;
+    background-color: white;
+}

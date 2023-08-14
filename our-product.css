@@ -1,0 +1,137 @@
+.our-products h2 {
+    color: #179193;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.our-products p {
+    font-size: 16px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.slider {
+    height: 350px;
+    margin: auto;
+    position: relative;
+    width: 95%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 22);
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+        width: calc(250px * 22);
+    }
+    100% {
+        transform: translateX(calc(-250px * 11));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slider img {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 5px rgba(23, 145, 147, 1);
+    transition: transform 0.5s;
+}
+
+.slider img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* GRADIENT SHADOWS */
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 8%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.product-button {
+    background-color: #179193;
+    padding: 6px 9px;
+    font-family: arial;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px black;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.product-button:hover {
+    color: #179193;
+    background-color: white;
+}
+
+@media only screen and (max-width: 736px) {
+
+    .our-products p {
+        font-size: 16px;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+
+    .slide {
+        height: 150px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px;
+    }
+
+    .button {
+        margin-bottom: 80px;
+        margin-top: 1px;
+    }
+}
